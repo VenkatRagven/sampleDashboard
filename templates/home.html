@@ -1,0 +1,196 @@
+<!-- <div class="hold-transition skin-blue sidebar-mini"> -->
+<div class="">
+	<div class="wrapper">
+		<!-- Main Header -->
+		<header class="main-header">
+			<!-- Logo -->
+			<a href="javascript:void(0);" class="logo">
+				<!-- mini logo for sidebar -->
+				<span class="logo-mini"><img class="img-responsive" src="templates/images/logo_sm.png"></span>
+				<!-- logo for regular state and mobile devices -->
+				<span class="logo-lg"><img class="img-responsive" src="templates/images/layer-5.png"></span>
+			</a>
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- Sidebar toggle button-->
+				<!-- <a href="javascript:void(0);" class="sidebar-toggle" data-toggle="offcanvas" role="button"> -->
+					<span class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<img src="templates/images/hamburger.svg">
+						<!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+					</span>
+				</a>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="noStyle navbar-nav">
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu" ng-click="showOptions()">
+							<!-- Menu Toggle Button -->
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+							<!-- The user image in the navbar-->
+							<img src="templates/images/user-ragav.jpg" class="user-image" alt="User Image">
+							<!-- hidden-xs hides the username on small devices so only the image appears. -->
+							<span class="hidden-xs">Ragaven </span>
+							<span class="down-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="arrowBox">
+			  <ul class="">
+			    <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-user" aria-hidden="true"></i></span> My Profile</a></li>
+			    <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-cog" aria-hidden="true"></i></span> Account Settings</a></li>
+			    <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-question-circle" aria-hidden="true"></i></span> Help</a></li>
+			    <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-sign-in" aria-hidden="true"></i></span> Log out</a></li> 
+			  </ul>
+			</div>
+		</header>
+		
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="templates/images/user-ragav.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>Ragaven</p>
+						<!-- Status -->
+						<a href="javascript:void(0);">Program Manager</a>
+					</div>
+				</div>
+				<!-- Sidebar Menu -->
+				<nav id="menu">
+					<ul class="sidebar-menu" data-spy="affix">
+						<li class="active treeview">
+							<a href="javascript:void(0);"><i class="fa fa-home menuIcons"></i> <span class="menuText">Dashboard</span> <i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li ng-click="getActiveSection('Processing')"><a href="#pieChart" class="activeMenu" ><span><i class="fa fa-circle" aria-hidden="true"></i>  </span><span class="padding15px"> Processing</span><span class="processing badge">20</span></a></li>
+
+								<li ng-click="getActiveSection('Keywords')"><a href="#wordCloud"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+								<span class="padding15px">Keywords</span><span class="inComplete badge">120</span></a></li>
+
+								<li ng-click="getActiveSection('Rejected')"><a href="#pieChart2"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+								<span class="padding15px">Rejected </span><span class="rejected badge">300</span></a></li>
+
+								<li ng-click="getActiveSection('Approval')"><a href="#wordCloud2"><span><i class="fa fa-circle" aria-hidden="true"></i></span> <span class="padding15px">Approval</span><span class="approved badge">678</span></a></li>	
+							</ul>
+
+							<li class="treeview">
+								<a href="javascript:void(0);"><i class="fa fa-shopping-cart menuIcons"></i> <span class="menuText">Products</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li ><a href="javascript:void(0);" ><span><i class="fa fa-circle" aria-hidden="true"></i>  </span>
+									<span class="padding15px"> TEI</span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">TLP </span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">Wrapper </span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">Reprints</span></a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);"><i class="fa fa-hourglass menuIcons"></i> <span class="menuText">My Products</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li ><a href="javascript:void(0);" ><span><i class="fa fa-circle" aria-hidden="true"></i>  </span>
+									<span class="padding15px"> TEI</span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">TLP </span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">Wrapper </span></a></li>
+									<li><a href="javascript:void(0);"><span><i class="fa fa-circle" aria-hidden="true"></i></span> 
+									<span class="padding15px">Reprints</span></a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="javascript:void(0);" ><i class="fa fa-sign-out menuIcons" aria-hidden="true"></i> <span class="menuText">Logout</span></a>
+							</li>
+						</li>
+					</ul>
+				</nav><!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains main content of the dashboard page -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<ol class="breadcrumb">
+					<li><a href="javascript:void(0);"><i class="fa fa-home"></i> Home</a></li>
+					<li class="active">Dashboard</li>
+					<li class="activeSection">{{activeSection}}</li>
+				</ol>
+			</section>
+			<!-- Main content -->
+			<section class="content" >
+				<!-- our Page Content Here -->
+				<div class="row mainSection">
+					<!-- 1st graph -->
+					<div class="col-md-12">
+						<!-- <div row-directive></div> -->
+						<!-- <row-directive></row-directive> -->
+						<div ng-include="'templates/calendar.html'"></div>
+					</div>
+
+					
+					<div class="col-md-12">
+						<div class="col-md-8" >
+							<div class=" page-section" id="pieChart" ></div>
+							<div class="mobileAddBtn">
+								<a href="javascript:void(0)">
+									<i class="fa fa-lg fa-plus-circle" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 marginTop50px">
+							<div class="row">
+								<button type="button" class="btn btn-primary prodButton">
+									<div class="paddingLR10px"><img src="templates/images/newProd.png"></div>
+									<div> CLICK TO ADD AN <br> INDIVIDUAL PRODUCT</div>
+								</button>
+							</div>
+							<div class="row marginTop50px">
+								<p><span class="leftText">13</span><span class="rightText">Items are under process</span></p><br/>
+							</div>
+							<div class="row ">
+								<p><span class="leftText">06</span><span class="rightText">Items are Rejected</span></p><br/>
+							</div>
+							<div class="row ">
+								<p><span class="leftText">21</span><span class="rightText">Items added this week</span></p><br/>
+							</div>
+						</div>
+					</div>
+					<!-- 2nd graph -->
+					<div class="col-md-12 marginTop50px">
+						<div class="col-md-8">
+							<div class="page-section" id="wordCloud"></div>
+						</div>
+					</div>
+					<!-- 3rd graph -->
+					<div class="col-md-12">
+						<div class="col-md-8" >
+							<div class="page-section" id="pieChart2" ></div>
+						</div>
+					</div>
+					<!-- 4th graph -->
+					<div class="col-md-12 marginTop50px">
+						<div class="col-md-8">
+							<div class="page-section" id="wordCloud2"></div>
+						</div>
+					</div>
+				</div>
+				
+			</section><!-- /.content -->
+		</div><!-- /.content-wrapper -->
+
+	</div><!-- ./wrapper -->
+</div>	
+<!-- REQUIRED JS SCRIPTS -->
+<script src="lib/customScripts.js"></script>
+<!-- Dashboard App -->
+<script src="lib/dashboardAppScripts.js"></script>
+
+

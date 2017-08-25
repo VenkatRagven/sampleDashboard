@@ -1,0 +1,31 @@
+<div class="row marginTop50px">
+    <div class="col-md-12">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="from">Start Date:</label>
+                <input type="text" class="form-control" id="datepicker" placeholder="mm/dd/yyyy">
+                <i class="fa fa-calendar form-control-feedback inputCalendar" aria-hidden="true"></i>
+            </div>
+            <div class="form-group">
+                <label for="to">End Date:</label>
+                <input type="text" class="form-control" id="datepicker1" placeholder="mm/dd/yyyy">
+                <i class="fa fa-calendar form-control-feedback inputCalendar" aria-hidden="true"></i>
+            </div>
+            <div class="form-group relativePos">
+                <select class="form-control" id="sel1">
+                    <option>All</option>
+                    <option>Sempra</option>
+                    <option>Global Energy</option>
+                    <option>Compucom Systems</option>
+                </select>
+            </div>
+            
+                <button type="submit" class="btn btn-default relativePos submitBtn">Submit</button>
+        </form>
+    </div>  
+</div>
+
+<script>
+            $("#datepicker").datepicker().datepicker("setDate", new Date());
+            $("#datepicker1").datepicker().datepicker("setDate", new Date());
+        </script> 
